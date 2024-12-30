@@ -2,6 +2,8 @@
 const { data: page } = await useAsyncData(() =>
   queryCollection('test').first()
 );
+
+console.log('page :>> ', page.value);
 </script>
 
 <template>
